@@ -1,0 +1,23 @@
+{
+  "name": "packinfo",
+  "version": "1.3.0",
+  "description": "A tool to print packing info, such as packing time,packing author and so on in browser console.\n\r",
+  "usage": "Usage:\n\r $ cd [dir which the 'index.html' file is in]\n\r $ packinfo\n   or\n\r $ packinfo -a [who] -i [info]",
+  "main": "index.js",
+  "repository":"https://github.com/ShenJet/npm-packinfo-cli",
+  "bin": {
+    "packinfo": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "packtime",
+    "packinfo"
+  ],
+  "author": "ShenJet",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.20.0"
+  }
+}
