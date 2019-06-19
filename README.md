@@ -29,7 +29,7 @@ A tool to print bundle info, such as packing time, packing author and so on in b
 ```
 
 ## See in index.html
-![script](https://github.com/ShenJet/npm-packinfo-cli/blob/master/imgs/packinfo1.png "script in index.html
+![script](https://github.com/ShenJet/npm-packinfo-cli/blob/master/imgs/packinfo1.png "script in index.html")
 
 
 ## See in borwser console
