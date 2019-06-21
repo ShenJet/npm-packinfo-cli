@@ -20,8 +20,8 @@
 
     program.parse(process.argv)
 
-    console.log('打包人员：',program.author||username);
-    console.log('附加信息：',program.info||'无' );
+    console.log('Who bundles: ',program.author||username);
+    console.log('Comment: ',program.info||'-none-' );
     
     
     // 文件路径设置
@@ -33,19 +33,19 @@
 
     // packinfo组装
     let now = new Date().toLocaleString()
-    console.log(now);
+    console.log(`Current time: ${now}`);
     
     let packinfo =  
 `<!--packinfo-script-start-->
         <script>
             let info = [{
-                key:'打包时间',
+                key:'Bundle time',
                 value:'${now}'
             },{
-                key:'打包者',
+                key:'Who did bundle',
                 value:'${program.author||username||'Anonymous'}'
             },{
-                key:'备注信息',
+                key:'Comment',
                 value:'${program.info||'无'}'
             }];
             console.table(info);
@@ -59,7 +59,7 @@
         let hastag = data.indexOf('packinfo-script-start')
         if(hastag !== -1){
             // 已存在packinfo
-            console.warn('已存在packinfo');
+            // console.warn('已存在packinfo');
             
             let matchres = data.match(/<!--packinfo-script-start-->/)
             // console.log('matchres:',matchres);
@@ -74,7 +74,7 @@
             }
         }else{
             // 不存在packinfo 直接写入文件
-            console.warn('不存在packinfo');
+            // console.warn('不存在packinfo');
             
             newdata = data.replace('</head>', packinfo+`</head>` )
         }
@@ -82,7 +82,7 @@
         // 把新字符串写入文件
         fs.writeFile(indexHtml, newdata, 'utf8', (err, res)=>{
             if(err) throw err;
-            console.log('文件写入成功！');
+            console.log('Succeed！');
             
         });
     })
