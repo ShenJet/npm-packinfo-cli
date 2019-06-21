@@ -25,7 +25,7 @@ A tool to print bundle info, such as packing time, packing author and so on in b
 ```
 
 ```
-    $ packinfo -a [who packs] -i [some comment] -v [version]
+    $ packinfo -a [who packs] -i [some comment] -c [version]
 ```
 
 ## See in index.html
