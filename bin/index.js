@@ -17,10 +17,12 @@
 
     program.option('-a, --author <author>','who packs the bundle')
     program.option('-i, --info <info>','otherinfo of the bundle')
+    program.option('-v, --version <version>','version')
 
     program.parse(process.argv)
 
     console.log('Who bundles: ',program.author||username);
+    console.log('Version: ',program.version||'-none-');
     console.log('Comment: ',program.info||'-none-' );
     
     
@@ -46,7 +48,10 @@
                 value:'${program.author||username||'Anonymous'}'
             },{
                 key:'Comment',
-                value:'${program.info||'无'}'
+                value:'${program.info||'none'}'
+            },{
+                key:'Version',
+                value:'${program.version||'none'}'
             }];
             console.table(info);
         </script>

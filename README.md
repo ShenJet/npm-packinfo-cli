@@ -1,4 +1,4 @@
-# packinfo
+# packinfo （Cli）
 
 A tool to print bundle info, such as packing time, packing author and so on in browser console.
 
@@ -25,7 +25,7 @@ A tool to print bundle info, such as packing time, packing author and so on in b
 ```
 
 ```
-    $ packinfo -a [who packs] -i [some comment]
+    $ packinfo -a [who packs] -i [some comment] -v [version]
 ```
 
 ## See in index.html

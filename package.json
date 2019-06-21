@@ -1,9 +1,9 @@
 {
   "name": "packinfo",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "repository": "https://github.com/ShenJet/npm-packinfo-cli",
   "description": "A tool to print packing info, such as packing time,packing author and so on in browser console.\n\r",
-  "usage": "Usage:\n\r $ cd [dir which the 'index.html' file is in]\n\r $ packinfo\n   or\n\r $ packinfo -a [who] -i [info]",
+  "usage": "Usage:\n\r $ cd [dir which the 'index.html' file is in]\n\r $ packinfo\n   or\n\r $ packinfo -a [who] -i [info] -v [version]",
   "main": "index.js",
   "bin": {
     "packinfo": "./index.js"
