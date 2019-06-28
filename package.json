@@ -20,5 +20,9 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^2.20.0"
+  },
+  "devDependencies": {
+    "gh-badges": "^2.2.0",
+    "shields-less": "^0.2.2"
   }
 }
